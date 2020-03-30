@@ -23,14 +23,15 @@ var server = require('./app');
 var port = process.env.PORT || 3000;
 
 
-var twitterServer = require('./twitterStream');
+var twitterServer = require('./twitterStream.js');
+
 
 server.listen(port, () => {
   // eslint-disable-next-line
-  console.log(`Server running on port: ${port}`);
+  console.log(`Watson Server running on port: ${port}`);
 });
 
 
 twitterServer.listen(3002, () => {
-  console.log('Server running on port: 3002');
+  console.log('Twitter Server running on port: 3002');
 })

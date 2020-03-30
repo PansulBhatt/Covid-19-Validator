@@ -4,7 +4,7 @@
   "version": "0.1.1",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "test-integration": "casperjs test ./test/integration/test.*.js",
     "test-integration-runner": "NODE_ENV=test node casper-runner.js",
     "test": "npm run lint && npm run test-integration-runner",
@@ -23,6 +23,7 @@
     "dotenv": "^6.2.0",
     "express": "^4.17.1",
     "ibm-watson": "^5.1.0",
+    "lodash": "^4.17.15",
     "socket.io": "^2.0.3",
     "twit": "^2.2.9"
   },
@@ -33,17 +34,23 @@
   "engines": {
     "node": ">=12"
   },
+  "babel": {
+    "presets": ["@babel/preset-env"]
+  },
   "engineStrict": true,
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.3",
+    "babel-preset-es2015": "^6.24.1",
     "casperjs": "^1.1.4",
     "codecov": "^3.6.5",
     "eslint": "^5.14.0",
-    "jest": "^24.9.0",
-    "phantomjs-prebuilt": "^2.1.16",
-    "supertest": "^4.0.2",
     "express-handlebars": "^3.0.0",
-    "nodemon": "^1.11.0"
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4",
+    "phantomjs-prebuilt": "^2.1.16",
+    "rimraf": "^3.0.2",
+    "supertest": "^4.0.2"
   },
   "homepage": "https://github.com/PansulBhatt/Covid-19-Validator",
   "directories": {

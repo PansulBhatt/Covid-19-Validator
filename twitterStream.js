@@ -1,3 +1,5 @@
+const get = require('lodash/get');
+
 const express = require('express'),
     app = express(),
     port = process.env.PORT || 5000,
@@ -22,7 +24,8 @@ app.get('/', function(req, res) {
             'name': tweet.user.name,
             'screen_name': tweet.user.screen_name,
             'text': tweet.text,
-            'avatar': tweet.user.profile_image_url
+            'avatar': tweet.user.profile_image_url,
+            'fullText': get(tweet, 'retweeted_status.extended_tweet.full_text', tweet.text)
         };
         console.log(data)
     });
