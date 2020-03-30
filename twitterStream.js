@@ -27,7 +27,7 @@ app.get('/', function(req, res) {
             'avatar': tweet.user.profile_image_url,
             'fullText': get(tweet, 'retweeted_status.extended_tweet.full_text', tweet.text)
         };
-        console.log(data)
+        console.log(data);
     });
     return res.send({});
 });
