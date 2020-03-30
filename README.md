@@ -16,6 +16,8 @@
     ```
 
 1. View the application in a browser at `localhost:3000`.
+2. View the streaming application at port 3002.  
+
 
 ## Deploy to IBM Cloud as a Cloud Foundry application
 
