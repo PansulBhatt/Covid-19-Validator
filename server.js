@@ -22,7 +22,15 @@ require('dotenv').config({silent: true});
 var server = require('./app');
 var port = process.env.PORT || 3000;
 
-server.listen(port, function() {
+
+var twitterServer = require('./twitterStream');
+
+server.listen(port, () => {
   // eslint-disable-next-line
-  console.log('Server running on port: %d', port);
+  console.log(`Server running on port: ${port}`);
 });
+
+
+twitterServer.listen(3002, () => {
+  console.log('Server running on port: 3002');
+})

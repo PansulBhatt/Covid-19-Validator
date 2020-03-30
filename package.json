@@ -1,6 +1,6 @@
 {
   "name": "@ibm-watson/assistant-simple",
-  "description": "A simple Node.js based web app which shows CDC COVID FAQ Assistant Starter Kit.",
+  "description": "Covid-19-Validator",
   "version": "0.1.1",
   "main": "server.js",
   "scripts": {
@@ -22,7 +22,9 @@
     "body-parser": "^1.19.0",
     "dotenv": "^6.2.0",
     "express": "^4.17.1",
-    "ibm-watson": "^5.1.0"
+    "ibm-watson": "^5.1.0",
+    "socket.io": "^2.0.3",
+    "twit": "^2.2.9"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
@@ -39,14 +41,13 @@
     "eslint": "^5.14.0",
     "jest": "^24.9.0",
     "phantomjs-prebuilt": "^2.1.16",
-    "supertest": "^4.0.2"
+    "supertest": "^4.0.2",
+    "express-handlebars": "^3.0.0",
+    "nodemon": "^1.11.0"
   },
-  "bugs": {
-    "url": "https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/issues"
-  },
-  "homepage": "https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020#readme",
+  "homepage": "https://github.com/PansulBhatt/Covid-19-Validator",
   "directories": {
     "test": "test"
   },
-  "author": ""
+  "author": "Pansul Bhatt"
 }
