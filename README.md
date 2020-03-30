@@ -17,7 +17,7 @@
 
 1. View the application in a browser at `localhost:3000`.
 2. View the streaming application at port 3002.  
-
+3. From a configurations standpoint, we have enabled ES6 support and added nodemon for development purposes.
 
 ## Deploy to IBM Cloud as a Cloud Foundry application
 
